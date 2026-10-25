@@ -133,3 +133,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;paddi
 footer span:first-child{display:inline-flex;align-items:center;gap:.6rem}
 footer .mark{width:24px;height:24px;box-shadow:none}
 #boot img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid var(--bone);box-shadow:0 0 30px #fdf4f344;margin-bottom:1.5rem}
+
+/* Certificate preview */
+.certificate-preview{display:block;width:min(100%,720px);margin:0 0 1rem;overflow:hidden;border:1px solid #a78bfa66;border-radius:12px;background:#100d1b;box-shadow:0 10px 32px #0005}
+.certificate-preview img{display:block;width:100%;height:auto;transition:transform .25s ease}
+.certificate-preview:hover img{transform:scale(1.015)}
+#ach-list li{min-width:0}
