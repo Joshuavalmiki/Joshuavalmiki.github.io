@@ -17,34 +17,6 @@
     }));
   }
 
-
-  // Load the last successfully collected public TryHackMe snapshot.
-  const thmPanel = document.getElementById("thm-stats-panel");
-  if (thmPanel) {
-    fetch("./tryhackme-progress.json", {cache: "no-store"})
-      .then(response => {
-        if (!response.ok) throw new Error("No successful snapshot yet");
-        return response.json();
-      })
-      .then(data => {
-        const stats = data.public_stats || {};
-        const set = (id, value) => {
-          const el = document.getElementById(id);
-          if (el) el.textContent = value === undefined || value === null || value === "" ? "—" : String(value);
-        };
-        set("thm-status", "PUBLIC DATA UPDATED");
-        set("thm-checked", data.checked_at_utc || "—");
-        set("thm-points", stats.points);
-        set("thm-rank", stats.rank);
-        set("thm-level", stats.level);
-        set("thm-rooms", data.completed_rooms_total_is_exact ? data.completed_rooms_total : String(data.completed_rooms_visible_on_first_page || 0) + " visible (first page)");
-      })
-      .catch(() => {
-        const status = document.getElementById("thm-status");
-        if (status) status.textContent = "No successful snapshot yet";
-      });
-  }
-
   // Low-key blue terminal rain: decorative only, with a reduced-motion fallback.
   const canvas = document.getElementById("matrix");
   if (!canvas) return;
