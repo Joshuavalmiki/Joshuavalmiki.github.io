@@ -123,7 +123,7 @@ addEventListener("pointermove", e => {
   setInterval(() => {
     if (document.hidden) return;
     x.fillStyle = "rgba(8,7,8,.12)"; x.fillRect(0, 0, w, h);
-    x.fillStyle = "rgba(253,244,243,.35)"; x.font = size + "px monospace";
+    x.fillStyle = "rgba(57,255,122,.42)"; x.font = size + "px monospace";
     drops.forEach((d, i) => {
       x.fillText(chars[Math.random() * chars.length | 0], i * 22, d * size);
       drops[i] = d * size > h && Math.random() > .97 ? 0 : d + 1;
