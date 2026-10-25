@@ -52,7 +52,7 @@ const CONFIG = {
   ],
 
   achievements: [
-    { title: "TryHackMe Pre Security", detail: "Learning path completed; SEC0 certification shown on profile", date: "" },
+    { title: "TryHackMe Pre Security — Certificate of Completion", detail: "Completed 26 June 2026 · 19 hours 10 minutes · Certificate ID: THM-ZT6BZDT99A", date: "", link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZT6BZDT99A.pdf" },
     { title: "TryHackMe profile", detail: "Level 7 · Adept · Top 15% as shown in the screenshot shared on 25 Oct 2026", date: "" }
   ]
 };
@@ -92,7 +92,7 @@ $("#skills-grid").innerHTML = CONFIG.skills.map(s => {
 $("#projects-grid").innerHTML = CONFIG.projects.map(p => `<article class="project"><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><ul class="tags">${(p.tech || []).map(t => `<li>${esc(t)}</li>`).join("")}</ul>${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">View on GitHub</a>` : ""}</article>`).join("");
 
 $("#ach-list").innerHTML = CONFIG.achievements.length
-  ? CONFIG.achievements.map(a => `<li><strong>${esc(a.title)}</strong><span>${esc(a.detail || "")}${a.date ? " · " + esc(a.date) : ""}</span></li>`).join("")
+  ? CONFIG.achievements.map(a => `<li><strong>${esc(a.title)}</strong><span>${esc(a.detail || "")}${a.date ? " · " + esc(a.date) : ""}${a.link ? ` · <a href="${esc(a.link)}" target="_blank" rel="noopener">View certificate ↗</a>` : ""}</span></li>`).join("")
   : `<li class="empty">Nothing listed yet. Certifications, completed labs and real results will appear here as I earn them.</li>`;
 
 const links = [["GitHub", CONFIG.github], ["Email", CONFIG.email && "mailto:" + CONFIG.email], ["LinkedIn", CONFIG.linkedin]];
