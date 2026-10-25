@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 920" role="img" aria-labelledby="title desc">
+<title id="title">TryHackMe Pre Security Certificate of Completion</title>
+<desc id="desc">Certificate awarded to Joshua Valmiki for completing the Pre Security Learning Path on 26 June 2026, course duration 19 hours 10 minutes, certificate ID THM-ZT6BZDT99A.</desc>
+<rect width="1300" height="920" fill="#f8f7f3"/>
+<rect x="24" y="24" width="1252" height="872" fill="none" stroke="#25252b" stroke-width="3"/>
+<rect x="39" y="39" width="1222" height="842" fill="none" stroke="#d7d2c8" stroke-width="1.5"/>
+<g fill="#25252b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<text x="650" y="105" font-size="25" font-weight="700" letter-spacing="5">TRYHACKME</text>
+<path d="M570 130 H730" stroke="#ef4b3f" stroke-width="5"/>
+<text x="650" y="250" font-size="34" letter-spacing="7" fill="#6d6873">CERTIFICATE OF COMPLETION</text>
+<text x="650" y="335" font-size="22" fill="#6d6873">THIS IS TO ACKNOWLEDGE THAT</text>
+<text x="650" y="420" font-size="62" font-weight="700">Joshua Valmiki</text>
+<text x="650" y="480" font-size="24" fill="#6d6873">has successfully completed the</text>
+<text x="650" y="550" font-size="46" font-weight="700" fill="#ef4b3f">Pre Security</text>
+<text x="650" y="592" font-size="26">Learning Path</text>
+<text x="650" y="690" font-size="23">26th June 2026</text>
+<text x="650" y="733" font-size="18" fill="#6d6873">Course duration: 19 hours 10 minutes</text>
+<text x="650" y="838" font-size="16" fill="#6d6873">Certificate ID: THM-ZT6BZDT99A</text>
+</g>
+<circle cx="650" cy="640" r="5" fill="#ef4b3f"/>
+</svg>
