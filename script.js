@@ -5,54 +5,58 @@
    Always add real things only (no invented achievements).
    ========================================================== */
 const CONFIG = {
-  updated: "2026-10-01",            // change this when you update the site
+  updated: "2026-10-25",
   github: "https://github.com/Joshuavalmiki",
-  email: "",                        // e.g. "you@example.com" (hidden while empty)
-  linkedin: "",                     // full URL (hidden while empty)
+  email: "",
+  linkedin: "",
 
   about: [
-    "I'm Joshua, and online I go by LOSERxTOBI. I'm a beginner in cybersecurity and I say so openly, because this site is a record of me getting better, not a show of what I already know.",
-    "What pulls me in is understanding how systems work well enough to see where they can fail. I want to do that professionally as a penetration tester, and I'm aiming for OSCP as the proof that I can.",
-    "I study a little every day, write down what I learn, and publish it here."
+    "I'm Joshua Valmiki, known online as LOSERxTOBI. I'm building my cybersecurity foundations in public and working toward my first role as a SOC Level 1 Analyst.",
+    "My current roadmap is TryHackMe Cyber Security 101 followed by SOC Level 1. I want to learn how defenders investigate alerts, understand logs, identify suspicious activity, and document incidents clearly.",
+    "I believe in showing real progress. This portfolio will grow with my notes, completed labs, and practical projects—not inflated claims."
   ],
 
   journey: [
-    { title: "Linux", status: "learning", date: "", desc: "Getting comfortable in the terminal: files, permissions, processes and the commands I'll use every day." },
-    { title: "Networking", status: "learning", date: "", desc: "How data moves: IP, ports, DNS, and the protocols that attackers and defenders both depend on." },
-    { title: "Web Security", status: "next", date: "", desc: "How HTTP works and how web apps break, using Burp Suite to inspect and test traffic." },
-    { title: "Ethical Hacking", status: "next", date: "", desc: "Reconnaissance, enumeration and exploitation, practised legally in labs." },
-    { title: "Penetration Testing", status: "next", date: "", desc: "Turning techniques into a repeatable method, plus writing clear reports." },
-    { title: "OSCP", status: "goal", date: "", desc: "The long-term goal: earning the Offensive Security Certified Professional certification." }
-    // Add a step: { title: "Bash scripting", status: "next", date: "Nov 2026", desc: "What it is and why." },
+    { title: "TryHackMe Pre Security", status: "done", date: "Completed", desc: "Completed the Pre Security learning path and earned the SEC0 certification shown on my TryHackMe profile." },
+    { title: "Cyber Security 101", status: "learning", date: "29% at last update", desc: "My current learning path for building broad cybersecurity knowledge. I'll update this milestone as I progress." },
+    { title: "SOC Level 1", status: "next", date: "1% at last update", desc: "Next major focus: defensive security, alert triage, log analysis, and incident investigation through structured labs." },
+    { title: "SOC Portfolio Projects", status: "next", date: "", desc: "Build and publish practical, clearly documented exercises using security logs, detection reasoning, findings, and remediation." },
+    { title: "First Cybersecurity Role", status: "goal", date: "", desc: "Prepare for entry-level SOC L1 applications with demonstrable fundamentals, hands-on practice, a focused résumé, and interview preparation." },
+    { title: "Broader Security Expertise", status: "goal", date: "", desc: "Long-term interests include penetration testing, security architecture, and eventually security leadership." }
   ],
 
   skills: [
-    { name: "Linux", level: 30, note: "Learning the terminal" },
-    { name: "Networking", level: 25, note: "Core protocols and ports" },
-    { name: "HTTP", level: 25, note: "Requests, responses, headers" },
-    { name: "Web Security", level: 15, note: "Just starting" },
-    { name: "Burp Suite", level: 10, note: "First steps" },
-    { name: "Ethical Hacking", level: 15, note: "Fundamentals" },
-    { name: "Python", level: 20, note: "Basics" },
-    { name: "Git", level: 30, note: "Commits and GitHub Pages" }
+    { name: "Linux", level: 30, note: "Fundamentals and terminal practice" },
+    { name: "Networking", level: 25, note: "Core concepts, DNS, and protocols" },
+    { name: "HTTP", level: 25, note: "Methods, headers, cookies, and sessions" },
+    { name: "Web Security", level: 15, note: "Learning core vulnerability concepts" },
+    { name: "Python", level: 20, note: "Basics and simple scripts" },
+    { name: "Git & GitHub", level: 30, note: "Repositories, commits, and portfolio updates" },
+    { name: "Log Analysis", level: 5, note: "Early learning stage" },
+    { name: "Incident Response", level: 5, note: "Planned SOC learning focus" }
   ],
 
   projects: [
     {
-      title: "This portfolio",
-      desc: "A hand-built site made with plain HTML, CSS and JavaScript. I update it as I learn, so it doubles as my learning log.",
+      title: "Cybersecurity Journey",
+      desc: "Daily learning logs and study notes covering foundational cybersecurity topics. The repository will grow as I complete more practice.",
+      tech: ["Markdown", "Git", "GitHub"],
+      link: "https://github.com/Joshuavalmiki/Cybersecurity-Journey"
+    },
+    {
+      title: "Personal Portfolio",
+      desc: "A hand-built portfolio using HTML, CSS, and JavaScript to document my learning roadmap and progress.",
       tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-      link: "https://github.com/Joshuavalmiki"
+      link: "https://github.com/Joshuavalmiki/Joshuavalmiki.github.io"
     }
-    // Add a project: { title: "", desc: "", tech: ["Python"], link: "https://github.com/Joshuavalmiki/repo" },
   ],
 
-  // Only certifications, labs and results you have actually completed.
   achievements: [
-    // { title: "Completed: Room or lab name", detail: "Platform, what you learned", date: "Oct 2026" },
+    { title: "TryHackMe Pre Security", detail: "Learning path completed; SEC0 certification shown on profile", date: "" },
+    { title: "TryHackMe profile", detail: "Level 7 · Adept · Top 15% as shown in the screenshot shared on 25 Oct 2026", date: "" }
   ]
 };
-/* ====================== END OF EDIT BLOCK ====================== */
+
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
