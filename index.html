@@ -1,95 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Joshua Valmiki (LOSERxTOBI) | Aspiring SOC Analyst</title>
-<meta name="description" content="Joshua Valmiki, known as LOSERxTOBI: an aspiring SOC Analyst building cybersecurity foundations, defensive security skills and a practical learning portfolio.">
-<meta name="theme-color" content="#070b09">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Joshua Valmiki | LOSERxTOBI">
-<meta property="og:description" content="Aspiring SOC Analyst L1, learning in public through labs, notes and practical projects.">
-<meta property="og:image" content="assets/logo.jpg">
-<link rel="icon" href="assets/logo.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@300;400;600;800&display=swap">
-<link rel="stylesheet" href="style.css?v=20261025-matrix">
-<script>try{if(!sessionStorage.boot&&!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.className="booting"}catch(e){}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Joshua Valmiki","alternateName":"LOSERxTOBI","jobTitle":"Aspiring SOC Analyst","sameAs":["https://github.com/Joshuavalmiki"]}</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOSERxTOBI // Cybersecurity Workstation</title>
+<meta name="description" content="Joshua Valmiki (LOSERxTOBI) — aspiring SOC Analyst documenting cybersecurity learning, labs, and defensive security projects.">
+<meta name="theme-color" content="#080d14">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=workstation-blue-1">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<canvas id="bg" aria-hidden="true"></canvas>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="melt" x="-5%" y="-8%" width="110%" height="116%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="3" result="n"><animate attributeName="baseFrequency" dur="14s" values="0.012 0.03;0.018 0.045;0.012 0.03" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter></svg>
-
-<header class="nav">
-  <a class="brand" href="#top"><img class="mark" src="assets/logo.jpg" alt="" width="32" height="32" onerror="this.remove()">LOSERxTOBI</a>
-  <nav aria-label="Main">
-    <a href="#about">About</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
-  </nav>
-  <span class="clock mono" id="clock" aria-hidden="true"></span>
+<canvas id="matrix" aria-hidden="true"></canvas><div class="crt" aria-hidden="true"></div>
+<header class="topbar">
+<a class="brand" href="#home"><span class="brand-icon">LT<span>_</span></span><span>LOSERxTOBI<small>DEFENSIVE SECURITY WORKSTATION</small></span></a>
+<button id="menu-toggle" class="menu-toggle" aria-expanded="false">[ MENU ]</button>
+<nav id="nav"><a href="#about">PROFILE</a><a href="#roadmap">ROADMAP</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#certs">CERTIFICATE</a></nav>
+<div class="live"><i></i> SYSTEM READY</div>
 </header>
-
-<main id="main">
-  <section id="top" class="hero wrap">
-    <div class="hero-text">
-      <h1>Joshua<br>Valmiki</h1>
-      <p class="alias mono">aka LOSERxTOBI</p>
-      <p class="tagline">I'm learning to break things so I can help protect them.</p>
-      <p class="intro">Aspiring SOC Analyst, building skills in Linux, networking, security fundamentals and defensive analysis, one lab at a time. This site documents real progress toward an entry-level SOC role.</p>
-      <div class="btns">
-        <a class="btn primary" href="#journey">Explore my journey</a>
-        <a class="btn" href="#projects">Projects</a>
-        <a class="btn" href="https://github.com/Joshuavalmiki" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <div class="telemetry mono" id="telemetry" aria-label="Progress summary"></div>
-    </div>
-    <figure class="portrait">
-      <img src="assets/logo.jpg" alt="LOSERxTOBI logo: a hooded figure covering their face with one hand" width="340" height="340" onerror="this.style.display='none'">
-    </figure>
-  </section>
-
-  <section id="about" class="wrap">
-    <h2>About me</h2>
-    <div id="about-text"></div>
-    <p class="mono now" id="now"></p>
-  </section>
-
-  <section id="journey" class="wrap">
-    <h2>My journey</h2>
-    <p class="lede">From cybersecurity foundations toward my first SOC L1 role. Select a step to see where I am with it.</p>
-    <ol class="timeline" id="timeline"></ol>
-  </section>
-
-  <section id="skills" class="wrap">
-    <h2>Skills</h2>
-    <p class="lede">Honest self-ratings out of 100. They rise as I practise.</p>
-    <div class="skills" id="skills-grid"></div>
-  </section>
-
-  <section id="projects" class="wrap">
-    <h2>Projects</h2>
-    <div class="projects" id="projects-grid"></div>
-  </section>
-
-  <section id="achievements" class="wrap">
-    <h2>Achievements</h2>
-    <ul class="ach" id="ach-list"></ul>
-  </section>
-
-  <section id="contact" class="wrap">
-    <h2>Contact</h2>
-    <p class="lede">Open to advice, collaboration, and entry-level SOC Analyst opportunities.</p>
-    <div class="links" id="links"></div>
-  </section>
+<main id="home">
+<section class="hero shell">
+<div class="hero-main">
+<div class="micro-label"><span class="blue">●</span> SESSION 001 // USER IDENTIFIED</div>
+<p class="command">operator@losertobi:~$ <span>whoami</span></p>
+<h1>JOSHUA<br><em>VALMIKI</em></h1>
+<div class="alias">CALLSIGN <strong>LOSERxTOBI</strong> <span class="blinking">▋</span></div>
+<div class="role-tag"><span></span> ASPIRING SOC ANALYST <span></span></div>
+<p class="hero-text">Learning to detect threats, investigate alerts, and help defend systems. A cybersecurity journey built one lab, one log, and one lesson at a time.</p>
+<div class="hero-actions"><a class="btn btn-blue" href="#roadmap">OPEN MISSION LOG <b>↘</b></a><a class="btn" href="https://github.com/Joshuavalmiki" target="_blank" rel="noopener">GITHUB ↗</a><a class="btn" href="https://tryhackme.com/p/LOSERxTOBI" target="_blank" rel="noopener">TRYHACKME ↗</a></div>
+<div class="readouts"><div><small>CAREER TARGET</small><b>SOC / L1</b></div><div><small>COMPLETED PATHS</small><b>01</b></div><div><small>MODE</small><b class="blue">LEARNING</b></div></div>
+</div>
+<aside class="workstation">
+<div class="machine-top"><div class="leds"><i></i><i></i><i></i></div><span>WS-01 / SECURITY CONSOLE</span><span class="machine-time">LOCAL NODE</span></div>
+<div class="screen">
+<div class="screen-heading"><span>▣ OPERATOR TERMINAL</span><span>ENCRYPTED SESSION: SIMULATED</span></div>
+<div class="term-line dim">┌──(losertobi㉿workstation)-[~]</div><div class="term-line dim">└─$ cat operator_profile.cfg</div>
+<div class="term-gap"><span class="term-key">OPERATOR</span><span>Joshua Valmiki</span></div>
+<div><span class="term-key">ALIAS</span><span>LOSERxTOBI</span></div>
+<div><span class="term-key">FOCUS</span><span>Blue Team / SOC</span></div>
+<div><span class="term-key">STATUS</span><span class="blue">Training in progress</span></div>
+<div><span class="term-key">OBJECTIVE</span><span>First cybersecurity role</span></div>
+<div class="term-gap dim">└─$ <span class="blue">system_check --skills</span></div>
+<div class="check"><b>[ OK ]</b> Curiosity subsystem</div><div class="check"><b>[ OK ]</b> Persistence module</div><div class="check pending"><b>[ .. ]</b> SOC skills compiling</div>
+<div class="terminal-cursor">root@ws-01:~# <span class="blinking">▋</span></div>
+</div>
+<div class="machine-bottom"><span>CPU <b>LEARNING</b></span><span>NET <b>CONNECTED</b></span><span>SECURITY <b>DEFENSIVE</b></span></div>
+<div class="bolt bolt-a"></div><div class="bolt bolt-b"></div>
+</aside>
+<a class="scroll" href="#about">SCROLL TO SYSTEM OVERVIEW <span>↓</span></a>
+</section>
+<section id="about" class="section shell">
+<div class="section-head"><span>01 / OPERATOR PROFILE</span><span>PROFILE.TXT</span></div><h2>Building the <span class="blue">defender mindset.</span></h2>
+<div class="two-col"><p class="body-text">I'm Joshua Valmiki, known online as <strong>LOSERxTOBI</strong>. I'm building a cybersecurity foundation and working toward an entry-level SOC Analyst role. My focus is learning how defenders review alerts, interpret logs, recognise suspicious activity, and document findings clearly. This site is my workbench for tracking that progress honestly.</p><div class="spec-panel"><div><span>OPERATOR</span><b>LOSERxTOBI</b></div><div><span>CAREER PATH</span><b>SOC ANALYST L1</b></div><div><span>LEARNING STYLE</span><b>HANDS-ON LABS + NOTES</b></div><div><span>RULE</span><b>VERIFY BEFORE CLAIMING</b></div></div></div>
+</section>
+<section id="roadmap" class="section shell">
+<div class="section-head"><span>02 / MISSION CONTROL</span><span>ROADMAP.LOG</span></div><h2>Progress, not <span class="blue">pretending.</span></h2><p class="section-intro">Milestones reflect the last recorded update and are not synced live.</p>
+<div class="timeline">
+<article class="milestone complete"><div class="milestone-no">01</div><div class="milestone-content"><div class="milestone-state">COMPLETED <span>■ VERIFIED</span></div><h3>TryHackMe Pre Security</h3><p>Completed the foundational learning path. Certificate earned on 26 June 2026.</p></div><b class="state-pill">DONE</b></article>
+<article class="milestone current"><div class="milestone-no">02</div><div class="milestone-content"><div class="milestone-state">CURRENT FOCUS <span>◉ IN PROGRESS</span></div><h3>Cyber Security 101</h3><p>Building broad cybersecurity knowledge through structured learning and practical exercises.</p></div><b class="state-pill">29%*</b></article>
+<article class="milestone"><div class="milestone-no">03</div><div class="milestone-content"><div class="milestone-state">NEXT OBJECTIVE <span>○ QUEUED</span></div><h3>SOC Level 1</h3><p>Practise alert triage, log analysis, SIEM concepts, threat investigation, and incident response.</p></div><b class="state-pill">NEXT</b></article>
+<article class="milestone"><div class="milestone-no">04</div><div class="milestone-content"><div class="milestone-state">BUILD PHASE <span>○ PLANNED</span></div><h3>Defensive security projects</h3><p>Publish lab write-ups with evidence, analysis, conclusions, and remediation ideas.</p></div><b class="state-pill">PLAN</b></article>
+<article class="milestone"><div class="milestone-no">05</div><div class="milestone-content"><div class="milestone-state">PRIMARY OBJECTIVE <span>◎ TARGET</span></div><h3>First cybersecurity role</h3><p>Prepare a focused CV, practise interview scenarios, and apply for entry-level SOC and security roles.</p></div><b class="state-pill">GOAL</b></article>
+</div><p class="fineprint">* Last recorded progress: 25 October 2026. Update the percentage as your learning continues.</p>
+</section>
+<section id="skills" class="section shell">
+<div class="section-head"><span>03 / TOOL CABINET</span><span>SKILLS.INI</span></div><h2>Current <span class="blue">loadout.</span></h2><p class="section-intro">Self-assessed learning indicators, not certifications or professional proficiency ratings.</p>
+<div class="skills-grid">
+<div class="skill-card"><div><b>Linux fundamentals</b><span>30 / 100</span></div><div class="meter"><i style="width:30%"></i></div><small>Terminal and command-line practice</small></div>
+<div class="skill-card"><div><b>Networking</b><span>25 / 100</span></div><div class="meter"><i style="width:25%"></i></div><small>Core concepts, DNS, protocols</small></div>
+<div class="skill-card"><div><b>HTTP & web basics</b><span>25 / 100</span></div><div class="meter"><i style="width:25%"></i></div><small>Requests, headers, cookies, sessions</small></div>
+<div class="skill-card"><div><b>Python basics</b><span>20 / 100</span></div><div class="meter"><i style="width:20%"></i></div><small>Syntax and simple scripts</small></div>
+<div class="skill-card"><div><b>Web security</b><span>15 / 100</span></div><div class="meter"><i style="width:15%"></i></div><small>Learning vulnerability concepts</small></div>
+<div class="skill-card"><div><b>Log analysis</b><span>05 / 100</span></div><div class="meter"><i style="width:5%"></i></div><small>Early learning stage</small></div>
+</div>
+</section>
+<section id="projects" class="section shell">
+<div class="section-head"><span>04 / WORKBENCH</span><span>PROJECTS/</span></div><h2>Evidence over <span class="blue">hype.</span></h2><p class="section-intro">The workbench starts with learning notes and grows through practical projects.</p>
+<div class="project-grid">
+<article class="project-card"><div class="project-head"><span>FILE 001</span><span>LEARNING LOG</span></div><div class="project-symbol">[≡]</div><h3>Cybersecurity Journey</h3><p>Study notes and learning logs tracking topics as I build cybersecurity fundamentals.</p><div class="chips"><span>MARKDOWN</span><span>GIT</span><span>LEARNING</span></div><a href="https://github.com/Joshuavalmiki/Cybersecurity-Journey" target="_blank" rel="noopener">OPEN REPOSITORY ↗</a></article>
+<article class="project-card"><div class="project-head"><span>FILE 002</span><span>PERSONAL BUILD</span></div><div class="project-symbol">[⌘]</div><h3>Portfolio source</h3><p>This site: a personal workbench for documenting progress, roadmap, and future security work.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JS</span></div><a href="https://github.com/Joshuavalmiki/Joshuavalmiki.github.io" target="_blank" rel="noopener">VIEW SOURCE ↗</a></article>
+<article class="project-card planned"><div class="project-head"><span>FILE 003</span><span>PLANNED</span></div><div class="project-symbol">[+]</div><h3>First SOC investigation</h3><p>Planned: document a lab investigation with alert context, evidence, analysis, outcome, and recommended response.</p><div class="chips"><span>LOGS</span><span>DETECTION</span><span>WRITE-UP</span></div><span class="project-status">NOT STARTED — PLANNED</span></article>
+</div>
+</section>
+<section id="certs" class="section shell">
+<div class="section-head"><span>05 / VERIFIED MILESTONES</span><span>CERTIFICATES/</span></div><h2>One completed <span class="blue">mission.</span></h2>
+<div class="certificate"><div class="cert-stamp">✓</div><div><div class="milestone-state">TRYHACKME / COMPLETED</div><h3>Pre Security Learning Path</h3><p>Joshua Valmiki · 26 June 2026 · 19 hours 10 minutes</p><code>CERTIFICATE ID: THM-ZT6BZDT99A</code><a class="cert-link" href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZT6BZDT99A.pdf" target="_blank" rel="noopener">OPEN ORIGINAL CERTIFICATE ↗</a></div></div>
+</section>
+<section id="contact" class="section shell contact">
+<div class="section-head"><span>06 / COMMS CHANNEL</span><span>CONTACT.SH</span></div><h2>Connection <span class="blue">open.</span></h2><p class="section-intro">Open to learning from the community, collaborating on beginner-friendly security work, and hearing about entry-level opportunities.</p>
+<div class="hero-actions"><a class="btn btn-blue" href="https://github.com/Joshuavalmiki" target="_blank" rel="noopener">GITHUB ↗</a><a class="btn" href="https://tryhackme.com/p/LOSERxTOBI" target="_blank" rel="noopener">TRYHACKME ↗</a><a class="btn" href="https://github.com/Joshuavalmiki/Cybersecurity-Journey" target="_blank" rel="noopener">LEARNING JOURNAL ↗</a></div>
+</section>
 </main>
-
-<footer class="wrap mono">
-  <span><img class="mark" src="assets/logo.jpg" alt="" width="24" height="24" onerror="this.remove()">Joshua Valmiki · LOSERxTOBI</span>
-  <span id="updated"></span>
-</footer>
-<noscript><p class="wrap">This site uses JavaScript to display its content. Find me on <a href="https://github.com/Joshuavalmiki">GitHub</a>.</p></noscript>
-<script src="script.js?v=20261025-matrix"></script>
-</body>
-</html>
+<footer class="footer shell"><span>© <span id="year"></span> LOSERxTOBI</span><span>BUILT WITH CURIOSITY <b class="blue">■</b> POWERED BY PRACTICE</span><a href="#home">BACK TO TOP ↑</a></footer>
+<script src="script.js?v=workstation-blue-1"></script>
+</body></html>
